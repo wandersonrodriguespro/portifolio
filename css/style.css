@@ -236,7 +236,8 @@ button:hover {
     gap: 35px;
 }
 
-.projeto_todoList {
+
+.item_projeto {
     background-color: var(--cor01);
     color: var(--cor03);
     width: 33%;
@@ -248,12 +249,14 @@ button:hover {
     padding: 45px 0;
 }
 
-.projeto_todoList img {
-    width: 100px;
+.item_projeto img {
+    width: 250px;
     margin: 0 auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
 }
 
-.projeto_todoList h3 {
+.item_projeto h3 {
     font-family: var(--nunito);
     font-size: 25px;
     font-weight: 900;
@@ -261,13 +264,13 @@ button:hover {
 
 }
 
-.projeto_todoList p {
+.item_projeto p {
     font-size: 16px;
     text-align: justify;
     margin: 35px 20px;
 }
 
-.projeto_todoList button {
+.item_projeto button {
     margin: 0 auto;
 }
 
