@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Contador Com Intervalo</title>
+</head>
+<body>
+    <header>
+        <h1>Vamos contar?</h1>
+    </header>
+
+    <section>
+        <div class="cont">
+            
+            <div class="form">
+                <p>Início:</p>
+                <input type="number" id="ini" placeholder="Digite um Número Inicial">
+            </div>
+            
+            <div class="form">
+                <p>Fim:</p>
+                <input type="number" id="fim" placeholder="Digite um Número Final">  
+            </div>
+
+            <div class="form">
+                <p><span>Passo:</span></p>
+                <input type="number" id="pas" placeholder="Intervalo Entre os Números">
+            </div>
+           
+            <input class="button" id="btn" type="button" value="CONTAR" onclick="contar()">
+            <input class="button" type="button" id="reset" value="RESETAR" onclick="reset()">
+            
+        </div><!--cont-->
+
+        <div class="res">
+
+            <p>Preparando a contagem...</p>
+
+        </div><!--res-->
+
+    </section>
+
+    <footer>
+        <p>Todos os Direitos Reservados</p>
+    </footer>
+
+    <script src="js/script.js">
+        
+    </script>
+    
+</body>
+</html>

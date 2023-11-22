@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,500;10..48,600;10..48,700;10..48,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Tabuadas</title>
+</head>
+<body>
+    <header>
+        <h1>Tabuadas</h1>
+    </header>
+
+    <section>
+        <div class="ref_calc">
+            
+            <h2>Insira o Multiplicador Abaixo</h2>
+            
+            <p><input type="number" name="multi" id="multiplicador" placeholder="Multiplicador"><p>
+
+            <p>
+                <input class="btn" type="button" value="GERAR" id="gerar" onclick="gerar()">
+                <input class="btn" type="button" value="RESET" id="reset" onclick="reset()">
+            </p>
+
+        </div><!--calc-->
+               
+        <div class="res">
+            <p>AGUARDANDO MULTIPLICADOR....</p>
+        </div><!--res-->
+    </section>
+
+    <footer>
+        <p>Todos os Direitos Reservados</p>
+    </footer>
+
+    <script src="js/script.js">
+        
+    </script>
+    
+</body>
+</html>

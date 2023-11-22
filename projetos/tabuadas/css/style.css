@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bricolage Grotesque', sans-serif;
+}
+
+body{
+    background-color: #4F4FAC;
+    font-size: 18px;
+    padding: 40px;
+}
+
+header h1{
+    color: white;
+    font-size: 60px;
+    font-weight: 900;
+    text-align: center;
+    padding: 20px;
+
+}
+
+section{
+    background-color: white;
+    border-radius: 20px;
+    padding: 60px;
+    max-width: 750px;
+    margin: 20px auto;
+    box-shadow: 0 0 30px 8px rgba(48, 47, 47, 0.363);
+    min-height: 400px;   
+}
+
+.ref_calc{
+    text-align: center;
+}
+
+.ref_calc h2{
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+
+input#multiplicador{
+    margin: 10px;
+    padding: 5px 19px;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 30px;
+}
+
+.btn{
+    cursor: pointer;
+    margin: 30px 15px;
+    padding: 10px 30px;
+    background-color: green;
+    color: white;
+    font-size: 18px;
+    line-height: 25px;
+    border: 0;
+    border-radius: 5px;
+}
+.btn:hover{
+    box-shadow: 0 0 30px 8px rgba(189, 189, 189, 0.363);
+    background-color: rgb(11, 160, 11);
+}
+
+
+.res {
+    margin: 0 auto;
+    max-width: 450px;
+    padding: 30px 50px;
+    margin-top: 20px;
+    border: 1px solid rgb(228, 228, 228);
+    border-radius: 15px;
+    box-shadow: 0 0 30px 8px rgba(189, 189, 189, 0.363);
+}
+.res p{
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 900;
+    
+}
+.res p:nth-of-type(1){
+    margin-bottom: 25px;
+    color: blue;
+}
+.res p.erro-res{
+    font-size: 20px;
+    line-height: 30px;
+    color: red;
+    font-weight: 800;
+}
+
+footer{
+    color: white;
+    font-size: 15px;
+    font-style: italic;
+    padding: 30px;
+    text-align: center;
+}
