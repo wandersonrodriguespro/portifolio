@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    outline: none;
+}
+
+body{
+    height: 100vh;
+    background-image: url("https://source.unsplash.com/1600x900/?landscape");
+    background-size: cover;
+}
+
+.cont{
+    background: #d1d1d1ef;;
+    max-width: 500px;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 150px auto;
+    box-shadow: 0 0 28px 2px rgba(87, 87, 87, 0.418);
+}
+
+.input_tarefa{
+    border: none;
+    border-radius: 5px;
+    width: 65%;
+    height: 40px;
+    padding-left: 15px;
+}
+
+.adListin {
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    background-color: #003329;
+    color: white;
+    font-size: 17px;
+    padding: 0 15px;
+    float: right;
+    cursor: pointer;
+}
+
+.adListin:hover{
+    opacity: 0.8;
+}
+.adListin:active{
+    opacity: o.6;
+}
+
+.list{
+    width: 100%;
+    margin-top: 40px;
+    list-style: none;
+}
+
+.list_item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f7f7f7;
+    padding: 20px 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.068);
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+.checkTarefa{
+    display: flex;
+    align-items: center;
+}
+.list_item p{
+    padding: 0 20px;
+    font-size: 17px;
+}
+
+
+.list_item img{
+    height: 25px;
+    opacity: 0.2;
+    transition: opacity 0.2s ease-in-out;
+}
+
+
+.list_item img:hover{
+    
+    opacity: 1;
+    cursor: pointer;
+}
+.done{
+    background-color: #8fac55;
+    text-decoration: line-through;
+}
+
+.done img{
+    opacity: 0;
+}
+.done:hover img{
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+}
