@@ -1,6 +1,6 @@
 function typeWriter(elemento) {
-    const textoArray = elemento.innerHTML.split('');
-
+    const textoArray = elemento.textContent.split('');
+    
     elemento.innerHTML = '';
 
     let i = 0;
@@ -11,12 +11,12 @@ function typeWriter(elemento) {
             i++;
             setTimeout(addLetter, 60);
         } else {
-            // Todo o texto foi escrito, você pode reiniciar a animação aqui
+            
             setTimeout(() => {
                 elemento.innerHTML = '';
                 i = 0;
-                addLetter(); // Inicie a animação novamente
-            }, 1000); // Espere 1 segundo antes de reiniciar
+                addLetter(); 
+            }, 1000); 
         }
     }
 
@@ -24,7 +24,7 @@ function typeWriter(elemento) {
 
 }
 
-const titulo = document.querySelector('.sobre p');
+const titulo = document.querySelector('.description-function');
 
 typeWriter(titulo);
 

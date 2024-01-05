@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -28,12 +28,44 @@
 
             <div class="nome">
                 <h1>Wanderson Rodrigues</h1>
-                <h3>Programador <span>Front End</span></h3>
+                <h3>Desenvolvedor <span>Front End</span></h3>
             </div><!-- nome  -->
 
-            <img src="img/js ex 14- code relogio.png" alt="imagem de codigo executado">
+            <p class="description-function">
+                function typeWriter(elemento) {<br>
+                    const textoArray = elemento.textContent.split('');
+                    
+                    elemento.innerHTML = '';
+                
+                    let i = 0;
+                
+                    function addLetter() {
+                        if (i < textoArray.length) {
+                            elemento.innerHTML += textoArray[i];
+                            i++;
+                            setTimeout(addLetter, 60);
+                        } else {
+                            
+                            setTimeout(() => {
+                                elemento.innerHTML = '';
+                                i = 0;
+                                addLetter(); 
+                            }, 1000); 
+                        }
+                    }
+                
+                    addLetter();
+                
+                }
+                
+                const titulo = document.querySelector('.description-function');
+                
+                typeWriter(titulo);
+            </p>
 
-        </div><!--  container -->
+            <!-- <img src="img/js ex 14- code relogio.png" alt="imagem de codigo executado"> -->
+
+        </p><!--  container -->
     </section><!-- section_header -->
 
     <section class="sobre" id="sobre_mim">
