@@ -115,11 +115,11 @@ nav li a:hover {
   letter-spacing: 1px;
 }
 
-.section_header img {
+/* .section_header img {
   width: 50%;
   border-radius: 10px;
   box-shadow: 0 0 15px rgb(109 109 109 / 82%);
-}
+} */
 
 .sobre {
   text-align: center;
@@ -141,7 +141,7 @@ nav li a:hover {
   width: 80%;
   border: 2px solid #ffffff;
   border-radius: 50%;
-  box-shadow: 0 0 26px -3px white;
+  box-shadow: 0 0 22px rgb(109 109 109 / 62%);
 }
 
 .minha_descricao {
