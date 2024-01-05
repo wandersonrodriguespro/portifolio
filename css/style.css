@@ -115,6 +115,15 @@ nav li a:hover {
   letter-spacing: 1px;
 }
 
+.icons-tec {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin: 15px;
+}
+.nome img {
+  width: 45px;
+}
 /* .section_header img {
   width: 50%;
   border-radius: 10px;
@@ -200,6 +209,7 @@ button:hover {
   transition: 0.5s;
 }
 
+
 .projetos {
   background-color: var(--cor02);
   text-align: center;
@@ -236,12 +246,13 @@ button:hover {
   background-color: var(--cor01);
   color: var(--cor03);
   width: 30%;
-  min-height: 200px;
+  min-height: 500px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   border-radius: 15px;
   padding: 45px 0;
+  gap: 20px;
 }
 
 .item_projeto img {
@@ -266,6 +277,28 @@ button:hover {
 
 .item_projeto button {
   margin: 0 auto;
+}
+
+.tec-project img {
+  width: 30px;
+}
+
+.tec-project p {
+  font-size: 12px;
+  margin: 9px auto;
+  text-align: center;
+}
+
+.btn-git {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.btn-git img {
+  width: 20px;
+  margin: 0;
 }
 
 .main_projetos a {
