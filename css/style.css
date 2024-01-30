@@ -209,7 +209,6 @@ button:hover {
   transition: 0.5s;
 }
 
-
 .projetos {
   background-color: var(--cor02);
   text-align: center;
@@ -246,19 +245,19 @@ button:hover {
   background-color: var(--cor01);
   color: var(--cor03);
   width: 30%;
-  min-height: 500px;
+  /* min-height: 500px; */
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   border-radius: 15px;
-  padding: 45px 0;
+  /* padding: 45px 0; */
   gap: 20px;
 }
 
 .item_projeto img {
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
-  border-radius: 10px;
+  border-radius: 10px 10px 0 0;
   margin-bottom: 10px;
 }
 
@@ -277,10 +276,11 @@ button:hover {
 
 .item_projeto button {
   margin: 0 auto;
+  width: 90%;
 }
 
 .tec-project img {
-  width: 30px;
+  width: 40px;
 }
 
 .tec-project p {
@@ -421,6 +421,10 @@ footer p {
     margin: 30px auto;
   }
 
+  .minha_img img {
+    max-width: 300px;
+}
+
   .section_header .container {
     display: block;
     text-align: center;
@@ -433,14 +437,21 @@ footer p {
     padding: 0;
   }
 
+  .icons-tec {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
   .section_header img {
-    width: 80%;
+    width: 50px;
     margin-top: 50px;
   }
 
   .sobre .container {
     display: block;
-    padding: 50px;
+    padding: 50px 20px;
   }
 
   .minha_img {
@@ -455,7 +466,7 @@ footer p {
 
   .minha_descricao h2 {
     text-align: center;
-    margin: 30px auto;
+    /* margin: 30px auto; */
   }
 
   .minha_descricao p {
@@ -470,14 +481,12 @@ footer p {
   .item_projeto {
     width: 45%;
     margin: auto;
-    min-height: 620px;
-    padding: 15px;
   }
 }
 
 @media screen and (max-width: 700px) {
   .container {
-    padding: 70px 8%;
+    padding: 70px 20px;
   }
 
   .section_header .container {
@@ -496,17 +505,13 @@ footer p {
     font-size: 25px;
   }
 
-  .nome img {
-    width: 50%;
-  }
-
   .sobre .container {
     min-height: 650px;
   }
 
-  .minha_descricao {
+  /* .minha_descricao {
     margin-top: 40px;
-  }
+  } */
 
   .minha_descricao p {
     min-height: 150px;
@@ -514,8 +519,6 @@ footer p {
 
   .item_projeto {
     width: 100%;
-    min-height: 620px;
-    padding: 70px 15px;
   }
 }
 
@@ -539,14 +542,6 @@ footer p {
   }
   .nome h3 span {
     font-size: 20px;
-  }
-
-  .nome img {
-    width: 90%;
-  }
-
-  .section_header img {
-    width: 100%;
   }
 
   .sobre .container {
