@@ -1,280 +1,283 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Wanderson Rodrigues</title>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <header id="home">
-        <nav>
-            <h1>Portifó<span>lio</span></h1>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#sobre_mim">Sobre</a></li>
-                <li><a href="#projetos_executados">Projetos</a></li>
-                <li><a href="#faleComigo">Fale Comigo</a></li>
-            </ul>
-        </nav>
+      <nav>
+        <!-- <h1>Portifó<span>lio</span></h1> -->
+        <img src="img/logo-portifólio.png" alt="Logo Portifólio Wanderson Rodrigues" />
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#sobre_mim">Sobre</a></li>
+          <li><a href="#projetos_executados">Projetos</a></li>
+          <li><a href="#faleComigo">Fale Comigo</a></li>
+        </ul>
+      </nav>
     </header>
 
     <section class="section_header">
-        <div class="container">
+      <div class="container">
+        <div class="nome">
+          <h1>Wanderson Rodrigues</h1>
 
-            <div class="nome">
-                <h1>Wanderson Rodrigues</h1>
-                
-                <h3>Desenvolvedor <span>Front End</span></h3>
-                
-                <div class="icons-tec">
-                    <img src="img/tecnologias/icon-html.png" alt="icon HTML">
-                    <img src="img/tecnologias/icon-css.png" alt="icon-CSS">
-                    <img src="img/tecnologias/icon-js.png" alt="icon-JS">
-                    <img src="img/tecnologias/icon-react.png" alt="icon-JS">
-                </div>
+          <h3>Desenvolvedor <span>Front End</span></h3>
 
-            </div><!-- nome  -->
+          <div class="icons-tec">
+            <img src="img/tecnologias/icon-html.png" alt="icon HTML" />
+            <img src="img/tecnologias/icon-css.png" alt="icon-CSS" />
+            <img src="img/tecnologias/icon-js.png" alt="icon-JS" />
+            <img src="img/tecnologias/icon-react.png" alt="icon-JS" />
+          </div>
+        </div>
+        <!-- nome  -->
 
-            <p class="description-function">
-                function typeWriter(elemento) {
-                    const textoArray = elemento.textContent.split('');
-                    
-                    elemento.innerHTML = '';
-                
-                    let i = 0;
-                
-                    function addLetter() {
-                        if (i < textoArray.length) {
-                            elemento.innerHTML += textoArray[i];
-                            i++;
-                            setTimeout(addLetter, 60);
-                        } else {
-                            
-                            setTimeout(() => {
-                                elemento.innerHTML = '';
-                                i = 0;
-                                addLetter(); 
-                            }, 1000); 
-                        }
-                    }
-                
-                    addLetter();
-                
-                }
-                
-                const titulo = document.querySelector('.description-function');
-                
-                typeWriter(titulo);
-            </p>
+        <p class="description-function">
+          function typeWriter(elemento) { const textoArray = elemento.textContent.split(''); elemento.innerHTML = ''; let i = 0; function addLetter() { if (i < textoArray.length) { elemento.innerHTML
+          += textoArray[i]; i++; setTimeout(addLetter, 60); } else { setTimeout(() => { elemento.innerHTML = ''; i = 0; addLetter(); }, 1000); } } addLetter(); } const titulo =
+          document.querySelector('.description-function'); typeWriter(titulo);
+        </p>
 
-            <!-- <img src="img/js ex 14- code relogio.png" alt="imagem de codigo executado"> -->
-
-        </p><!--  container -->
-    </section><!-- section_header -->
+        <!-- <img src="img/js ex 14- code relogio.png" alt="imagem de codigo executado"> -->
+      </div>
+      <!--  container -->
+    </section>
+    <!-- section_header -->
 
     <section class="sobre" id="sobre_mim">
-        <div class="container">
-            <div class="minha_img">
-                <img src="img/Wanderson Rodrigues.png" alt="imagem Wanderson Rodrigues">
-            </div>
+      <div class="container">
+        <div class="minha_img">
+          <img src="img/Wanderson Rodrigues.png" alt="imagem Wanderson Rodrigues" />
+        </div>
 
-            <div class="minha_descricao">
+        <div class="minha_descricao">
+          <div class="t_descricao">
+            <h2>Sobre Mim</h2>
+          </div>
+          <!--  t_descricao   -->
 
-                <div class="t_descricao">
-                    <h2>Sobre Mim</h2>
-                </div><!--  t_descricao   -->
+          <p>
+            Me chamo Wanderson Rodrigues e como entusiasta do desenvolvimento web, encontrei minha paixão na criação de soluções digitais que fazem a diferença. Atuando desde 2019 como desenvolvedor
+            autônomo, mergulhei no universo do HTML, CSS, JavaScript e React, buscando sempre superar desafios e aprimorar minhas habilidades.
+          </p>
 
-                <p>
-                    Profissional apaixonado por tecnologia, especialista no desenvolvimento de sites e e-commerce.
-                    Ao longo dos anos, tenho me dedicado a aprimorar minhas habilidades nessas áreas para oferecer
-                    soluções digitais
-                    eficientes e de alta qualidade.
-                </p>
-
-                <div class="btn_contato">
-                    <a href="https://wa.me/5519971443047" target="_blank"><button>Entre Em Contato</button></a>
-                </div>
-            </div><!--  minha_descricao   -->
-        </div><!--  container -->
-
-    </section><!--sobre-->
+          <div class="btn_contato">
+            <a href="https://wa.me/5519971443047" target="_blank"><button>Entre Em Contato</button></a>
+          </div>
+        </div>
+        <!--  minha_descricao   -->
+      </div>
+      <!--  container -->
+    </section>
+    <!--sobre-->
 
     <!--    Projetos Executados     -->
 
     <section class="projetos" id="projetos_executados">
-        <h2><span>Principais</span> Projetos</h2>
-        <div class="container">
+      <h2><span>Principais</span> Projetos</h2>
+      <div class="container">
+        <div class="main_projetos">
+          <div class="item_projeto">
+            <img src="img/img-projetos/conversor_de_moedas.png" alt="imgem com selections para selecionar a moeda a ser convertida também uma area com o input onde coloca o valor a ser convertido" />
+            <h3>Conversor de Moedas</h3>
 
-            <div class="main_projetos">
+            <button>
+              <a href="https://wandersonrodriguespro.github.io/Curso-DevClub/Aulas_JS/Modulo-002/conversor/" target="_blank">Ver Projeto</a>
+            </button>
+            <button class="btn-git">
+              <a href="https://github.com/wandersonrodriguespro/Curso-DevClub/tree/main/Aulas_JS/Modulo-002/conversor" target="_blank">GitHub </a>
+              <img src="img/tecnologias/icon-gtihub.png" alt="" />
+            </button>
 
-                <div class="item_projeto">
-                    <img src="img/img-projetos/conversor_de_moedas.png" alt="imgem com selections para selecionar a moeda a ser convertida também uma area com o input onde coloca o valor a ser convertido">
-                    <h3>Conversor de Moedas</h3>
-                    
-                    <button>
-                        <a href="https://wandersonrodriguespro.github.io/Curso-DevClub/Aulas_JS/Modulo-002/conversor/" target="_blank">Ver Projeto</a>
+            <div class="tec-project">
+              <p>Tecnologias Utilizada</p>
+              <img src="img/tecnologias/icon-html.png" alt="icon HTML" />
+              <img src="img/tecnologias/icon-css.png" alt="icon-CSS" />
+              <img src="img/tecnologias/icon-js.png" alt="icon-JS" />
+              <img src="img/tecnologias/icon-api.png" alt="icon-JS" />
+            </div>
+          </div>
 
-                    </button>
-                    <button class="btn-git">
-                        <a href="https://github.com/wandersonrodriguespro/Curso-DevClub/tree/main/Aulas_JS/Modulo-002/conversor" target="_blank">GitHub </a>
-                        <img src="img/tecnologias/icon-gtihub.png" alt="">
-                    </button>
-                    
-                    <div class="tec-project">
-                        <p>Tecnologias Utilizada</p>
-                        <img src="img/tecnologias/icon-html.png" alt="icon HTML">
-                        <img src="img/tecnologias/icon-css.png" alt="icon-CSS">
-                        <img src="img/tecnologias/icon-js.png" alt="icon-JS">
-                        <img src="img/tecnologias/icon-api.png" alt="icon-JS">
-                    </div>
+          <div class="item_projeto">
+            <img src="img/img-projetos/Dev Movie.png" alt="imagem de um site de veiculo" />
+            <h3>Dev Movie</h3>
 
-                </div>
+            <button>
+              <a href="https://devmovieapp.netlify.app/" target="_blank">Ver Projeto</a>
+            </button>
 
-                <div class="item_projeto">
-                    <img src="img/img-projetos/Dev Movie.png" alt="imagem de um site de veiculo">
-                    <h3>Dev Movie</h3>
-                    
-                    <button>
-                        <a href="https://devmovieapp.netlify.app/" target="_blank">Ver Projeto</a>
-                    </button>
+            <button class="btn-git">
+              <a href="https://github.com/wandersonrodriguespro/movie-app" target="_blank">GitHub </a>
+              <img src="img/tecnologias/icon-gtihub.png" alt="" />
+            </button>
 
-                    <button class="btn-git">
-                        <a href="https://github.com/wandersonrodriguespro/movie-app" target="_blank">GitHub </a>
-                        <img src="img/tecnologias/icon-gtihub.png" alt="">
-                    </button>
-                    
-                    <div class="tec-project">
-                        <p>Tecnologias Utilizada</p>
-                        <img src="img/tecnologias/icon-react.png" alt="icon React">
-                        <img src="img/tecnologias/vite.png" alt="icon Vite">
-                        <img src="img/tecnologias/icon-api.png" alt="icon-JS">
-                        <img src="img/tecnologias/icon-js.png" alt="icon JavaScript">
-                        <img src="img/tecnologias/icon-css.png" alt="icon-CSS">
-                    </div>
+            <div class="tec-project">
+              <p>Tecnologias Utilizada</p>
+              <img src="img/tecnologias/icon-react.png" alt="icon React" />
+              <img src="img/tecnologias/vite.png" alt="icon Vite" />
+              <img src="img/tecnologias/icon-api.png" alt="icon-JS" />
+              <img src="img/tecnologias/icon-js.png" alt="icon JavaScript" />
+              <img src="img/tecnologias/icon-css.png" alt="icon-CSS" />
+            </div>
+          </div>
 
-                </div>
+          <div class="item_projeto">
+            <img src="img/img-projetos/Site_M.png" alt="imagem do site do mario" />
+            <h3>Site Mario</h3>
 
-                <div class="item_projeto">
-                    <img src="img/img-projetos/Site_M.png" alt="imagem do site do mario">
-                    <h3>Site Mario</h3>
-                    
-                    <button>
-                        <a href="https://loquacious-malasada-ebd0ba.netlify.app" target="_blank">Ver Projeto</a>
-                    </button>
+            <button>
+              <a href="https://loquacious-malasada-ebd0ba.netlify.app" target="_blank">Ver Projeto</a>
+            </button>
 
-                    <button class="btn-git">
-                        <a href="https://github.com/wandersonrodriguespro/Curso-DevClub/tree/main/Site-Mario" target="_blank">GitHub</a>
-                        <img src="img/tecnologias/icon-gtihub.png" alt="">
-                    </button>
+            <button class="btn-git">
+              <a href="https://github.com/wandersonrodriguespro/Curso-DevClub/tree/main/Site-Mario" target="_blank">GitHub</a>
+              <img src="img/tecnologias/icon-gtihub.png" alt="" />
+            </button>
 
-                    <div class="tec-project">
-                        <p>Tecnologias Utilizada</p>
-                        <img src="img/tecnologias/icon-html.png" alt="icon HTML">
-                        <img src="img/tecnologias/icon-css.png" alt="icon-CSS">
-                        <img src="img/tecnologias/icon-js.png" alt="icon-JS">
-                    </div>
+            <div class="tec-project">
+              <p>Tecnologias Utilizada</p>
+              <img src="img/tecnologias/icon-html.png" alt="icon HTML" />
+              <img src="img/tecnologias/icon-css.png" alt="icon-CSS" />
+              <img src="img/tecnologias/icon-js.png" alt="icon-JS" />
+            </div>
+          </div>
 
-                </div>
+          <div class="item_projeto">
+            <img src="img/img-projetos/Sorteador.png" alt="imagem do site da apple com o iphone 14" />
+            <h3>Dev Sorteio</h3>
 
-                <div class="item_projeto">
-                    <img src="img/img-projetos/Sorteador.png" alt="imagem do site da apple com o iphone 14">
-                    <h3>Dev Sorteio</h3>
+            <button>
+              <a href="https://wandersonrodriguespro.github.io/sorteador/" target="_blank">Ver Projeto</a>
+            </button>
 
-                    <button>
-                        <a href="https://wandersonrodriguespro.github.io/sorteador/" target="_blank">Ver Projeto</a>
-                    </button>
+            <button class="btn-git">
+              <a href="https://github.com/wandersonrodriguespro/sorteador" target="_blank">GitHub </a>
+              <img src="img/tecnologias/icon-gtihub.png" alt="" />
+            </button>
 
-                    <button class="btn-git">
-                        <a href="https://github.com/wandersonrodriguespro/sorteador" target="_blank">GitHub </a>
-                        <img src="img/tecnologias/icon-gtihub.png" alt="">
-                    </button>
+            <div class="tec-project">
+              <p>Tecnologias Utilizada</p>
+              <img src="img/tecnologias/icon-html.png" alt="icon HTML" />
+              <img src="img/tecnologias/icon-css.png" alt="icon-CSS" />
+              <img src="img/tecnologias/icon-js.png" alt="icon-JS" />
+            </div>
+          </div>
 
-                    <div class="tec-project">
-                        <p>Tecnologias Utilizada</p>
-                        <img src="img/tecnologias/icon-html.png" alt="icon HTML">
-                        <img src="img/tecnologias/icon-css.png" alt="icon-CSS">
-                        <img src="img/tecnologias/icon-js.png" alt="icon-JS">
-                    </div>
+          <div class="item_projeto">
+            <img src="img/img-projetos/to-do-list.png"imagem do site de todo list">
+            <h3>ToDo List</h3>
 
-                </div>
+            <button>
+              <a href="https://wandersonrodriguespro.github.io/portifolio/projetos/to_do_list/" target="_blank">Ver Projeto</a>
+            </button>
 
-                <div class="item_projeto">
-                    <img src="img/img-projetos/to-do-list.png"imagem do site de todo list">
-                    <h3>ToDo List</h3>
+            <button class="btn-git">
+              <a href="https://github.com/wandersonrodriguespro/portifolio/tree/main/projetos/to_do_list" target="_blank">GitHub </a>
+              <img src="img/tecnologias/icon-gtihub.png" alt="" />
+            </button>
 
-                    <button>
-                        <a href="https://wandersonrodriguespro.github.io/portifolio/projetos/to_do_list/" target="_blank">Ver Projeto</a>
-                    </button>
+            <div class="tec-project">
+              <p>Tecnologias Utilizada</p>
+              <img src="img/tecnologias/icon-html.png" alt="icon HTML" />
+              <img src="img/tecnologias/icon-css.png" alt="icon-CSS" />
+              <img src="img/tecnologias/icon-js.png" alt="icon-JS" />
+            </div>
+          </div>
 
-                    <button class="btn-git">
-                        <a href="https://github.com/wandersonrodriguespro/portifolio/tree/main/projetos/to_do_list" target="_blank">GitHub </a>
-                        <img src="img/tecnologias/icon-gtihub.png" alt="">
-                    </button>
+          <div class="item_projeto">
+            <img src="img/img-projetos/app-lista-mercado.png" alt="imagem do app de lista de supermercado" />
+            <h3>App Lista Supermercado</h3>
 
+            <button>
+              <a href="https://wandersonrodriguespro.github.io/curso-webmaster-exercicios/JavaScript/supermercado_app/" target="_blank">Ver Projeto</a>
+            </button>
 
-                    <div class="tec-project">
-                        <p>Tecnologias Utilizada</p>
-                        <img src="img/tecnologias/icon-html.png" alt="icon HTML">
-                        <img src="img/tecnologias/icon-css.png" alt="icon-CSS">
-                        <img src="img/tecnologias/icon-js.png" alt="icon-JS">
-                    </div>
+            <button class="btn-git">
+              <a href="https://github.com/wandersonrodriguespro/curso-webmaster-exercicios/tree/main/JavaScript/supermercado_app" target="_blank">GitHub </a>
+              <img src="img/tecnologias/icon-gtihub.png" alt="" />
+            </button>
 
-                </div>
-
-                <div class="item_projeto">
-                    <img src="img/img-projetos/app-lista-mercado.png" alt="imagem do app de lista de supermercado">
-                    <h3>App Lista Supermercado</h3>
-
-                    <button>
-                        <a href="https://wandersonrodriguespro.github.io/curso-webmaster-exercicios/JavaScript/supermercado_app/" target="_blank">Ver Projeto</a>
-                    </button>
-
-                    <button class="btn-git">
-                        <a href="https://github.com/wandersonrodriguespro/curso-webmaster-exercicios/tree/main/JavaScript/supermercado_app" target="_blank">GitHub </a>
-                        <img src="img/tecnologias/icon-gtihub.png" alt="">
-                    </button>
-
-                    <div class="tec-project">
-                        <p>Tecnologias Utilizada</p>
-                        <img src="img/tecnologias/icon-html.png" alt="icon HTML">
-                        <img src="img/tecnologias/icon-css.png" alt="icon-CSS">
-                        <img src="img/tecnologias/icon-js.png" alt="icon-JS">
-                    </div>
-
-                </div>
-
-
-            </div><!--  main_projetos -->
-
-        </div><!--container-->
-    </section><!--  projeto   -->
-
-    <div class="scroll-up">
-        <a href="#home"><img src="img/arrow-up-white.png" alt="Botão na parte inferior so site para com a função de retornar ao topo"></a>
-    </div>
+            <div class="tec-project">
+              <p>Tecnologias Utilizada</p>
+              <img src="img/tecnologias/icon-html.png" alt="icon HTML" />
+              <img src="img/tecnologias/icon-css.png" alt="icon-CSS" />
+              <img src="img/tecnologias/icon-js.png" alt="icon-JS" />
+            </div>
+          </div>
+        </div>
+        <!--  main_projetos -->
+      </div>
+      <!--container-->
+    </section>
+    <!--  projeto   -->
 
     <footer id="faleComigo">
+      <div class="contact">
+        <form class="fale-conosco" action="./php/mail.php" method="POST">
+          <h2>Contato</h2>
+          <div class="input-form">
+            <label for="input-name">Nome:</label>
+            <input id="input-name" type="text" name="nome" />
+          </div>
+          <div class="input-form">
+            <label for="input-email">E-Mail:</label>
+            <input id="input-email" type="text" name="email" />
+          </div>
+          
+          <div class="input-form">
+            <label for="input-tel">Telefone:</label>
+            <input id="input-tel" type="tel" name="telefone" />
+          </div>
+          <div class="input-form">
+            <label for="input-info ">Mensagem:</label>
+            <textarea id="input-info" name="mensagem"></textarea>
+          </div>
+
+          <button class="btn-submit" id="send" type="submit">Enviar Formulário</button>
+          <!-- <input type="hidden" name="_captcha" value="false" />
+          <input type="hidden" name="_next" value="https://wandersonrodriguespro.github.io/portifolio/" /> -->
+        </form>
+      </div>
+
+      <div class="info-contato-footer">
         <h5>Wanderson Rodrigues</h5>
         <p>Para Mais Informações</p>
-
         <div class="social">
-            <a href="https://www.linkedin.com/in/wanderson-rodrigues-54573496/" target="_blank"><img
-                    src="img/linkedin.png" alt="linkedin"></a>
-            <a href="https://github.com/wandersonrodriguespro" target="_blank"><img
-                    src="img/github.png" alt="GitHub"></a>
-            <a href="https://www.instagram.com/wandersonrodriguespro/" target="_blank"><img
-                    src="img/social-instagram.png" alt="Instagram"></a>
-            <a href="tel:+5519971443047" target="_blank"><img src="img/telefone.png" alt="Telefone de Contato"></a>
-            <a href="https://wa.me/5519971443047" target="_blank"><img src="img/icon-whatsApp.png" alt="WhatsApp"></a>
+          <a href="https://www.linkedin.com/in/wanderson-rodrigues-54573496/" target="_blank"><img src="img/linkedin.png" alt="linkedin" /></a>
+          <a href="https://github.com/wandersonrodriguespro" target="_blank"><img src="img/github.png" alt="GitHub" /></a>
+          <a href="https://www.instagram.com/wandersonrodriguespro/" target="_blank"><img src="img/social-instagram.png" alt="Instagram" /></a>
+          <a href="tel:+5519971443047" target="_blank"><img src="img/telefone.png" alt="Telefone de Contato" /></a>
+          <a href="https://wa.me/5519971443047" target="_blank"><img src="img/icon-whatsApp.png" alt="WhatsApp" /></a>
         </div>
         <p>© 2023 - Todos Os Direitos Reservados</p>
-    </footer>
-</body>
-<script src="js/script.js"></script>
+      </div>
 
+      <div class="scroll-up">
+        <a href="#home"><img src="img/arrow-up-white.png" alt="Botão na parte inferior so site para com a função de retornar ao topo" /></a>
+      </div>
+
+      <a href="https://wa.me/5519971443047" target="_blank">
+        <div class="btn-whatsapp pulse">
+          <img src="img/icon-withe-whatsapp.svg" alt="" />
+        </div>
+      </a>
+    </footer>
+
+    <div class="bg-modal hide"></div>
+    <div class="modal-obrigado hide">
+      <p class="clouse-modal">X</p>
+      <h3>Obrigado pelo Contato!</h3>
+      <p>Retornarei assim que possível, fique a vontade para me chamar no WhatsApp</p>
+      <div class="btn_contato">
+        <button><a href="https://wa.me/5519971443047" target="_blank">Entre Em Contato</a></button>
+      </div>
+    </div>
+  </body>
+  <script src="js/script.js"></script>
 </html>

@@ -6,6 +6,7 @@
   --cor02: #181818;
   --cor03: #ffffff;
   --cor04: #b10101;
+  --colorgreen: #25d366;
 
   /* Fonts */
   --montserrat: "Montserrat", sans-serif;
@@ -23,6 +24,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: var(--nunito);
+  text-decoration: none;
 }
 
 body {
@@ -142,7 +144,7 @@ nav li a:hover {
 }
 
 .minha_img img {
-  width: 80%;
+  width: 55%;
   border: 2px solid #ffffff;
   border-radius: 50%;
   box-shadow: 0 0 22px rgb(109 109 109 / 62%);
@@ -237,7 +239,7 @@ button:hover {
 
 .item_projeto {
   background-color: var(--cor01);
-  box-shadow: 0 0 20px -15px;
+  box-shadow: 0 0 20px -15px var(--cor03);
   color: var(--cor03);
   width: 30%;
   display: flex;
@@ -270,7 +272,6 @@ button:hover {
 .item_projeto button {
   margin: 0 auto;
   width: 70%;
-
 }
 
 .tec-project img {
@@ -304,9 +305,9 @@ button:hover {
 
 .scroll-up {
   position: fixed;
-  right: 50px;
-  bottom: 50px;
-  z-index: 1;
+  right: 35px;
+  bottom: 29px;
+  z-index: 12;
   cursor: pointer;
 }
 
@@ -316,14 +317,14 @@ button:hover {
 }
 
 .scroll-up img {
-  max-width: 50px;
+  max-width: 45px;
 }
 
 footer {
   text-align: center;
   color: var(--cor03);
   background-color: var(--cor01);
-  padding: 30px 3%;
+  padding: 30px 0 10px 0;
 }
 
 footer h5 {
@@ -368,6 +369,231 @@ footer p {
   animation: digit 0.6s infinite;
 }
 
+.btn-whatsapp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 45px;
+  height: 45px;
+  padding: 10px;
+  border-radius: 50%;
+  background-color: var(--colorgreen);
+
+  position: fixed;
+  bottom: 35px;
+  left: 35px;
+  z-index: 12;
+  cursor: pointer;
+}
+
+.pulse {
+  animation: animate-pulse 3s linear infinite;
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 0 3%;
+}
+
+.contact h2 {
+  font-size: 35px;
+}
+
+.fale-conosco {
+  width: 100%;
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 10px;
+  gap: 20px;
+}
+
+form {
+  width: 50%;
+}
+
+input {
+  width: 100%;
+  height: 40px;
+  border-radius: 3px;
+  border: 1px solid var(--cor04);
+  padding: 25px 20px 20px 20px;
+
+  color: var(--cor03);
+
+  background: transparent;
+  background-color: transparent;
+  outline: none;
+}
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 50px black inset; /* aqui muda sua cor do fundo */
+  -webkit-text-fill-color: var(--cor03); /* Cor do texto */
+}
+
+.input-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+label {
+  margin-bottom: -8px;
+  background: var(--cor01);
+  z-index: 2;
+  border-radius: 3px;
+  padding: 0px 18px;
+  margin-left: 18px;
+  font-size: 0.8rem;
+}
+
+textarea {
+  min-width: 100%;
+  resize: none;
+  height: 150px;
+  width: auto;
+  border-radius: 3px;
+  border: 1px solid var(--cor04);
+  padding: 10px;
+  padding: 18px;
+
+  background: transparent;
+  background-color: transparent;
+  color: var(--cor03);
+  outline: none;
+}
+
+button#send {
+  margin: auto;
+}
+
+.info-contato-footer {
+  width: 100%;
+  margin-top: 30px;
+  padding-top: 30px;
+  border-top: 2px solid var(--cor02);
+}
+
+.bg-modal,
+.modal-obrigado {
+  transition: 0.5s;
+  opacity: 1;
+  pointer-events: all;
+}
+
+.bg-modal {
+  width: 100%;
+  height: 100%;
+  background: #00000085;
+  backdrop-filter: blur(6px);
+  z-index: 17;
+  position: fixed;
+  top: 0;
+  left: 0;
+  /* display: none; */
+}
+
+.modal-obrigado {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 20;
+  transform: translate(-50%, -50%);
+  background-color: var(--cor01);
+  border: 2px solid var(--cor04);
+
+  width: 50%;
+  border-radius: 25px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50%;
+
+  gap: 25px;
+}
+
+button a {
+  color: var(--cor03);
+}
+
+.clouse-modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: var(--cor04); */
+  background-color: transparent;
+  color: var(--cor03);
+  padding: 5px 2px 3px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px solid var(--cor04);
+  font-size: 0.8rem;
+  font-weight: 600;
+
+  position: absolute;
+  top: 15px;
+  right: 15px;
+
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.clouse-modal:hover {
+  background-color: transparent;
+}
+
+.modal-obrigado h3 {
+  font-size: 2rem;
+  color: var(--cor03);
+  font-weight: 900;
+}
+
+.modal-obrigado p:nth-last-child(2) {
+  font-size: 1.5rem;
+  text-align: center;
+  color: var(--cor03);
+  max-width: 400px;
+  line-height: 2rem;
+}
+
+.modal-obrigado button {
+  display: block;
+  margin: auto;
+  text-decoration: none;
+}
+
+.bg-modal.hide,
+.modal-obrigado.hide {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal-obrigado.hide {
+  top: 0;
+}
+
+@keyframes animate-pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(51, 204, 102, 0.7), 0 0 0 0 rgba(51, 204, 102, 0.7);
+  }
+  40% {
+    box-shadow: 0 0 0 50px rgba(51, 204, 102, 0), 0 0 0 0 rgba(51, 204, 102, 0.7);
+  }
+  80% {
+    box-shadow: 0 0 0 50px rgba(51, 204, 102, 0), 0 0 0 30px rgba(51, 204, 102, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(51, 204, 102, 0), 0 0 0 30px rgba(51, 204, 102, 0);
+  }
+}
+
 /*  Animação  */
 
 /* .minha_descricao p::after {
@@ -400,6 +626,9 @@ footer p {
   }
 
   nav h1 {
+    margin: auto;
+  }
+  nav img {
     margin: auto;
   }
 
@@ -476,6 +705,10 @@ footer p {
     width: 45%;
     margin: auto;
   }
+
+  .modal-obrigado {
+    width: 80%;
+  }
 }
 
 @media screen and (max-width: 700px) {
@@ -514,11 +747,32 @@ footer p {
   .item_projeto {
     width: 100%;
   }
+
+  .scroll-up {
+    right: 20px;
+    bottom: 20px;
+  }
+
+  .btn-whatsapp {
+    left: 20px;
+    bottom: 25px;
+  }
 }
 
 @media screen and (max-width: 545px) {
   .description-function {
     display: none;
+  }
+
+  .modal-obrigado {
+    padding: 30px;
+  }
+  .modal-obrigado h3 {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  .modal-obrigado p {
+    font-size: 1.2rem;
   }
 }
 
@@ -565,5 +819,9 @@ footer p {
   .projetos h2,
   .projetos h2 span {
     font-size: 25px;
+  }
+
+  .modal-obrigado button {
+    width: 100%;
   }
 }
