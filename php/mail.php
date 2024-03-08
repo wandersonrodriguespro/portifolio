@@ -41,5 +41,5 @@
 
   mail($destino, $assunto, $arquivo, $headers);
   
-  echo "<meta http-equiv='refresh' content='10;URL=/index.html'>";
+  echo "<meta http-equiv='refresh' content='10;URL=https://wandersonrodrigues-portifolio.netlify.app'>";
 ?>
