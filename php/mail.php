@@ -30,16 +30,16 @@
   //Enviar
 
   //Enviar
-  if (mail($destino, $assunto, $arquivo, $headers)) {
-      // E-mail enviado com sucesso, chame a função toggleModal()
-      echo '<script src="../js/modal.js"></script>';
-      echo '<script>toggleModal();</script>';
-  } else {
-      // O envio do e-mail falhou
-      echo '<script>alert("Falha ao enviar o e-mail.");</script>';
-  }
+  // if (mail($destino, $assunto, $arquivo, $headers)) {
+  //     // E-mail enviado com sucesso, chame a função toggleModal()
+  //     echo '<script src="../js/modal.js"></script>';
+  //     echo '<script>toggleModal();</script>';
+  // } else {
+  //     // O envio do e-mail falhou
+  //     echo '<script>alert("Falha ao enviar o e-mail.");</script>';
+  // }
 
-  // mail($destino, $assunto, $arquivo, $headers);
+  mail($destino, $assunto, $arquivo, $headers);
   
-  // echo "<meta http-equiv='refresh' content='10;URL=../contato.html'>";
+  echo "<meta http-equiv='refresh' content='10;URL=../contato.html'>";
 ?>
