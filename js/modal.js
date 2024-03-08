@@ -1,3 +1,4 @@
+
 const closeModalButton = document.querySelector(".clouse-modal");
 const bgModal = document.querySelector(".bg-modal");
 const modal = document.querySelector(".modal-obrigado");
