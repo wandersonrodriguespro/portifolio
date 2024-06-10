@@ -355,11 +355,11 @@ footer p {
 
 .description-function {
   width: 50%;
-  line-height: 40px;
+  line-height: 24px;
   background: #000;
   padding: 25px;
   border-radius: 15px;
-  height: 315px;
+  height: 400px;
 }
 
 .description-function::after {

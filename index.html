@@ -38,11 +38,21 @@
         </div>
         <!-- nome  -->
 
-        <p class="description-function">
-          function typeWriter(elemento) { const textoArray = elemento.textContent.split(''); elemento.innerHTML = ''; let i = 0; function addLetter() { if (i < textoArray.length) { elemento.innerHTML
-          += textoArray[i]; i++; setTimeout(addLetter, 60); } else { setTimeout(() => { elemento.innerHTML = ''; i = 0; addLetter(); }, 1000); } } addLetter(); } const titulo =
-          document.querySelector('.description-function'); typeWriter(titulo);
-        </p>
+        <pre class="description-function">
+function typeWriter(elemento) { 
+  const textoArray = elemento.textContent.split(''); 
+    elemento.innerHTML = ''; 
+    let i = 0; function addLetter() { 
+    if (i < textoArray.length) { 
+      elemento.innerHTML += textoArray[i]; 
+      i++; 
+      setTimeout(addLetter, 60); 
+  } else { setTimeout(() => { elemento.innerHTML = ''; i = 0; addLetter();}, 
+  1000);}} 
+  addLetter();
+} 
+const titulo = document.querySelector('.description-function'); 
+typeWriter(titulo);</pre>
 
         <!-- <img src="img/js ex 14- code relogio.png" alt="imagem de codigo executado"> -->
       </div>
